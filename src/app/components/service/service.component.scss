@@ -1,0 +1,183 @@
+.service{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.backser{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dev, .mar, .dibu{
+    z-index: 2;
+    width: 60%;
+    display: inline-block;
+}
+
+.dev{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.dibu{
+    margin-top: 2%;
+}
+
+.dev .titulo_1{
+    color: #ffffff;
+    font-size: 300%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.dev .parrafo_1{
+    color: #ffffff;
+    width: 50%;
+    float: right;
+    text-align: justify;
+    display: table-cell;
+   vertical-align: middle;
+   
+}
+
+.mar .titulo_2{
+    color: #ffffff;
+    font-size: 300%;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.mar .parrafo_2{
+    color: #ffffff;
+    width: 50%;
+    float: left;
+    text-align: justify;
+}
+
+.dibu .titulo_3{
+    color: #ffffff;
+    font-size: 300%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.dibu .parrafo_3{
+    color: #ffffff;
+    width: 50%;
+    float: right;
+    text-align: justify;
+}
+
+/*mediaquery*/
+
+@media screen and (max-width: 1400px) {
+
+	.dev, .mar, .dibu{
+        width: 70%;
+        padding-top: 0;
+    }
+
+    .dev{
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+    
+    .dibu{
+        margin-top: 1%;
+    }
+
+    .dev .titulo_1, .mar .titulo_2, .dibu .titulo_3{
+        padding-bottom: 5%;
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .service{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 2;
+        padding-top: 20%;
+    }
+    
+    .backser{
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dev,
+    .mar,
+    .dibu{
+        position: relative;
+        width: 80%;
+        background-color: red;
+        display: block !important;
+    }
+
+    .dev .titulo_1,
+    .mar .titulo_2,
+    .dibu .titulo_3{
+        text-align: justify;
+        font-size: 200%;
+        text-align: justify;
+        float: left;
+    }
+
+    .dev .parrafo_1,
+    .mar .parrafo_2,
+    .dibu .parrafo_3{
+        text-align: justify;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .service{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .service{
+        position: relative;
+        width: 100%;
+        min-height: 130vh;
+        z-index: 2;
+    }
+
+}
+	
+/*cerrando mediaquery*/
+
+
+
+
+
+
+
+
+
+
+
+
+

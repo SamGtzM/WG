@@ -1,0 +1,66 @@
+
+/*back video*/
+
+.backwhite {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgb(27,27,27, .9);
+  }
+  
+  .inivid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+  }
+
+  .inivid2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  
+  /*mediaquery*/
+  
+  @media screen and (min-width: 1050px) {
+    .inivid{
+      display: block;
+    }
+
+    .inivid2{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .inivid2{
+      display: block;
+    }
+
+    .inivid{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+        .backwhite{
+            height: 150vh;
+        }
+
+        .inivid{
+          display: none;
+        }
+
+        .inivid2{
+          display: block;
+        }
+    }
+  
+  /*cerrando mediaquery*/
+  
+  /*cerrando back video*/
